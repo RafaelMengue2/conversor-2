@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Temperatura</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <main>
+
+        <div id="text">
+            <h1>Conversor de Temperatura</h1>
+        </div>
+
+        <div id="container">
+
+            <div id="container-temperatura">
+                <input type="number" id="temperatura" class="input" placeholder="Temperatura para converter">
+            </div>
+
+            <div class="container-select">
+                <select name="select" id="select1">
+                    <option value="C" selected>Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                    <option value="R">Rankine</option>
+                </select>
+                <div class="select_arrow"></div>
+            </div>
+
+            <div id="container-resultado">
+                <input type="text" placeholder="Resultado" class="input" id="resultado">
+            </div>
+
+            <div class="container-select">
+                <select name="select" id="select2">
+                    <option value="C">Celsius</option>
+                    <option value="F" selected>Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                    <option value="R">Rankine</option>
+                </select>
+                <div class="select_arrow"></div>
+            </div>
+
+            <div class="container-submit">
+                <button class="btn" onclick="calcular()">Calcular</button>
+            </div>
+            <div class="container-submit">
+                <button class="btn" onclick="limpar()" id="limpar">Limpar</button>
+            </div>
+        </div>
+    </main>
+</body>
+
+    <script src="conversor.js"></script>
+</html>

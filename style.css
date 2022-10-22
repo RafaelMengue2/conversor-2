@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+  
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding-top: 4vh;
+    box-sizing: border-box;
+}
+
+main #text{
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.8em;
+}
+
+#container-temperatura{
+    max-width: 100%;
+    width: 100%;
+}
+
+#container-resultado{
+    max-width: 100%;
+    width: 100%;
+}
+
+.input{
+    position: relative;
+    width: 93%;
+    font-size: 16px;
+    border-width: 1px;
+    background-color: #ffffff;
+    color: #000000;
+    border-style: solid;
+    border-radius: 7px;
+    box-shadow: 0px 0px 13px rgba(0,0,0,.75);
+
+    max-width: 100%;
+    padding: 1vw;
+    margin-bottom: .5em;
+}
+.input:focus{
+    outline:none;
+}
+
+.container-select {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 1.5em;
+    width: 100%;
+}    
+
+.container-select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 10px 15px;
+        outline: 0;
+        border-radius: 7px;
+        background: #ffffff;
+        color: #000000;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+}
+
+.container-select select::-ms-expand {
+    display: none;
+}
+
+.container-select select:hover,
+.container-select select:focus {
+    color: #ff0000;
+    background: #ffffff;
+}
+
+.container-select select:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.select_arrow{
+    position: absolute;
+    top: 16px;
+    right: 15px;
+    width: 0px;
+    height: 0px;
+    border: solid #ff0000;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.container-select select:hover ~ .select_arrow,
+.container-select select:focus ~ .select_arrow {
+    border-color: #000000;
+}
+
+.container-select select:disabled ~ .select_arrow {
+    border-top-color: #cccccc;
+}
+
+.container-submit{
+    width: 100%;
+    max-width: 100%;
+}
+
+.btn {
+	background-color:#ff0000;
+	border-radius:5px;
+	border:1px solid #ffffff;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	font-weight:bold;
+	padding:10px 40px;
+	text-decoration:none;
+    width: 100%;
+    max-width: 100%;
+}
+.btn:hover {
+	background:#000000;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+#limpar{
+    margin-top: 1vh;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 30%;
+    margin: auto;
+}
